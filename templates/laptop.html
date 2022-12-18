@@ -1,0 +1,36 @@
+<html>
+<head>
+{% block title %}
+{% endblock %}
+<div id="header">
+<h1>PC Store</h1>
+<a href="/"><button> Начало </button></a>
+</div>
+</head>
+<body>
+
+<p align=left>
+
+
+{% block model %}
+{% endblock %}
+<img src="/static/lp3.jpg" width="250" height="200" />
+
+<h2> Acer </h2>
+<li>AMD Ryzen 3 2200U (2.5/3.4 GHz, 4 MB)
+<li>AMD RX Vega 3
+<li>8GB DDR4 2133MHz
+<li>1TB SATA 5400rpm
+<li>120GB M.2 SSD
+<li>15,6" (1920x1080) матов дисплей
+</p>
+
+<div id='footer'>
+  <h3> Лаптопи </h3>
+  </div>
+
+{% extends "div.html" %}
+{% block div %}
+{% endblock %}
+</body>
+</html>

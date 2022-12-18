@@ -1,0 +1,82 @@
+<html>
+<head>
+{% block title %}
+{% endblock %}
+<div id="header">
+<h1>PC Store</h1>
+</div>
+<div id="nav">
+</br>
+<a href="/posts"><button> Коментари </button></a>
+</br> </br>
+<a href="/info"><button> Магазини </button></a>
+</div>
+</head>
+<body>
+
+
+
+<div id="section">
+<h1>Категории</h1>
+<p>
+<img src="/static/1.jpg" width="163" height="150"/> &nbsp; <img src="/static/PC.jpg" width="163" height="150" /> </br>
+&nbsp;&nbsp;&nbsp;
+<a href="/laps"><button>Лаптопи </button></a>
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/PCs"><button> Персонали Компютри </button></a>
+</p>
+
+</div>
+
+<div id="footer">
+PC Store &copy;
+</div>
+
+    <h1></h1>
+    <form>
+       <fieldset>
+          <legend> Контакти </legend>
+          <p>
+             <label>Град</label>
+             <select id = "myList">
+               <option value = "1">София-0888217312</option>
+               <option value = "2">Разлог-081238123</option>
+               <option value = "3">Варна-089321232</option>
+             </select>
+
+          </p>
+       </fieldset>
+    </form>
+
+
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:125px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:500px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+</style>
+
+</body>
+</html>

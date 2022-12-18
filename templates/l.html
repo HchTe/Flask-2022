@@ -1,0 +1,18 @@
+{% extends "laptop.html" %}
+{% block title %}
+<title> laptop section </title>
+{% endblock %}
+
+{% block model %}
+<img src="/static/lp2.jpg" width="250" height="200" />
+    {% for spec in specs %}
+        <h2> {{ spec.model }}</h2>
+
+         {{  spec.cpu }}
+</br>
+        {{  spec.ram }}
+</br>
+        {{ spec.display }}
+
+    {% endfor %}
+{% endblock %}

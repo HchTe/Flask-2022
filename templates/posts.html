@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Коментари</title>
+<div id='header'>
+  <h1> PC Store </h1>
+<a href="/"><button> Начало </button></a>
+</div>
+<h1>Коментари</h1>
+<body>
+    <hr>
+    <h2>Добавете коментар:</h2>
+    <form action='/posts' method='POST'>
+        Title: &nbsp;&nbsp;&nbsp;
+         <input type='text' name='title' id='title'>
+       </br></br>
+        Author:
+        <input type='text' name='author' id='author'>
+      </br></br>
+        Post:&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' name='content' id='content'>
+      </br></br>
+        <input type='submit' value='Публикувай!'>
+    </form>
+    <hr>
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        {% if post.author %}
+            <h3>By: {{ post.author }}</h3>
+        {% else %}
+            <h3>By: N/A </h3>
+        {% endif %}
+        <p>{{ post.content }}</p>
+        <a href="/posts/delete/{{post.id}}"><button> Delete</button></a>
+      <hr>
+
+    {% endfor %}
+<div id='footer'>
+  <h3> Коментари </h3>
+</div>
+
+{% extends "div.html" %}
+{% block div %}
+{% endblock %}
+
+</body>
+</html>
